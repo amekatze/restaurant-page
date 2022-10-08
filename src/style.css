@@ -11,7 +11,6 @@
     font-size: 25px;
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
 }
 
 .header {   
@@ -36,14 +35,18 @@
     justify-content: space-between;
 }
 
-.nav, .nav a {
+.nav button {
     color: rgb(4, 4, 4);
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
+    border:none;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background: none;
 }
 
-.nav a:hover {
+.nav button:hover {
+    border-bottom: 1px solid black;
     text-shadow: 2px 2px 4px rgb(255, 189, 34);
 }
 
@@ -75,26 +78,41 @@
     justify-content: center;
 }
 
-.page {
+.page { 
+}
+
+.menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
+    color:rgb(57, 41, 23);
 }
 
-.page div, .page img {
-    width: 14rem;
+.menu div, .menu img {
+    width: 17rem;
+}
+
+.menu img {
+    height: 17rem;
+    object-fit: cover;
 }
 
 .description {
-    border: 1px solid black;
+    border-top: 5px double rgb(0, 0, 0);
     font-size: 17px;
     padding: 10px;
+    height: 10rem;
 }
 
 .description span {
     display: block;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.description span:hover{
+    text-shadow: 2px 2px 4px rgb(255, 189, 34);
 }
 
 .footer {
