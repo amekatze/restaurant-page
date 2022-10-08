@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {   
+    display: flex;  
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+
+.header, .footer {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.928);
+}
+
+.nav {
+    display: flex;
+    width: 90vw ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav, .nav a {
+    color: rgb(4, 4, 4);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-shadow: 2px 2px 4px rgb(255, 189, 34);
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between; 
+    width: 35vw;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    padding: 30px;
+}
+
+.logo {
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.main {
+    margin: 100px 0;
+    padding: 50px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.page div, .page img {
+    width: 14rem;
+}
+
+.description {
+    border: 1px solid black;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.description span {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.footer {
+    border-top: 1px solid black;
+    bottom: 0;
+}
