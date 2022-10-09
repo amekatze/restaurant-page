@@ -35,12 +35,12 @@ let menuBook = [
 ]
 
 function menu(){
-    const page = document.querySelector('.page');
-    page.innerHTML = ' ';
-    page.classList.add('menu')
+    const main = document.querySelector('main');
+    main.innerHTML = ' ';
+    main.classList.add('menu')
     const header = document.createElement('h2')
     header.innerText = 'メニュー';
-    page.appendChild(header)
+    main.appendChild(header)
     menuBook.forEach(item => {
         const menuCard = document.createElement('div');
         menuCard.classList.add('menu-card');
@@ -49,7 +49,7 @@ function menu(){
         description.classList.add('description');
         description.innerHTML = `<span>${item.title}</span>` + item.description;
         menuCard.appendChild(description);
-        page.appendChild(menuCard)
+        main.appendChild(menuCard)
     })
 }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;500&display=swap');
 
 *{
     box-sizing: border-box;
@@ -8,19 +8,20 @@
     margin: 0;
     padding: 0;
     font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 300;
     font-size: 25px;
     display: flex;
     justify-content: center;
 }
 
-.header {   
+header {   
     display: flex;  
     position: fixed;
     top: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 5px double rgb(190, 141, 67);
 }
 
-.header, .footer {
+header, footer {
     position: fixed;
     width: 100vw;
     height: 10vh;
@@ -28,36 +29,36 @@
     background-color: rgba(255, 255, 255, 0.928);
 }
 
-.nav {
+nav {
     display: flex;
     width: 90vw ;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav button {
+nav button {
     color: rgb(4, 4, 4);
     font-size: 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     border:none;
     font-family: 'Zen Maru Gothic', sans-serif;
     background: none;
 }
 
-.nav button:hover {
-    border-bottom: 1px solid black;
+nav button:hover {
     text-shadow: 2px 2px 4px rgb(255, 189, 34);
+    font-weight: 300;
 }
 
-.nav ul{
+nav ul{
     display: flex;
     justify-content: space-between; 
     width: 35vw;
     padding: 0;
 }
 
-.nav li {
+nav li {
     list-style: none;
     padding: 30px;
 }
@@ -65,20 +66,30 @@
 .logo {
     padding: 20px;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
     color: black;
     font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-.main {
+main {
     margin: 100px 0;
     padding: 50px;
     width: 80vw;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
 }
 
-.page { 
+main > img, span {
+    width: 45vw;
+}
+
+main > img {
+    margin-bottom: 20px;
+}
+
+
+.highlight {
+    text-shadow: 2px 2px 2px rgb(255, 189, 34);
 }
 
 .menu {
@@ -89,11 +100,11 @@
 }
 
 .menu div, .menu img {
-    width: 17rem;
+    width: 20vw;
 }
 
 .menu img {
-    height: 17rem;
+    height: 20vw;
     object-fit: cover;
 }
 
@@ -106,7 +117,6 @@
 
 .description span {
     display: block;
-    font-weight: bold;
     font-size: 24px;
     margin-bottom: 5px;
 }
@@ -115,7 +125,38 @@
     text-shadow: 2px 2px 4px rgb(255, 189, 34);
 }
 
-.footer {
-    border-top: 1px solid black;
+footer {
+    border-top: 5px double rgb(190, 141, 67);
     bottom: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .logo {
+        font-size: 1.3rem;
+        padding-left: 0px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu div, .menu img {
+        width: 60vw;
+    }
+    
+    .menu img {
+        height: 60vw;
+    }
+
+    nav button {
+        font-size: 15px;
+    }
+
+    nav li {
+        padding: 5px;
+    }
+
+    main > img, span {
+        width: 60vw;
+    }
 }

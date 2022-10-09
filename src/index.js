@@ -2,7 +2,14 @@ import './style.css';
 import menu from './menu';
 import home from './home';
 import access from './access';
+import pageload from './pageload'
 
+
+
+pageload();
+home();
+
+// Nav Buttons
 const homeBtn = document.querySelector('#home');
 homeBtn.addEventListener('click', home)
 
